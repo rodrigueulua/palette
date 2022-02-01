@@ -1,0 +1,34 @@
+<h1>Palette</h1>
+
+<div class="palette">
+    <div class="palette__color">
+        <div class="palette__color__square" [style]="hColorPrimary"></div>
+        <div class="palette__color__square" [style]="hColorSecondary"></div>
+        <div class="palette__color__square" [style]="hColorTertiary"></div>
+
+
+        <div class="palette__color__slider">
+            <div>
+                <span>H</span>
+                <input type="range" min="0" max="360" (change)="ChangeColor(hValue, sValue, lValue)" [(ngModel)]="hValue">
+                <span>{{hValue}}</span>
+            </div>
+
+            <div>
+                <span>S</span>
+                <input type="range" min="0" max="100" (change)="ChangeColor(hValue, sValue, lValue)" [(ngModel)]="sValue">
+                <span>{{sValue}}</span>
+            </div>
+
+            <div>
+                <span>L</span>
+                <input type="range" min="0" max="100" (change)="ChangeColor(hValue, sValue, lValue)" [(ngModel)]="lValue">
+                <span>{{lValue}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="palette__text">
+        <code>{{requestValue}}</code>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.palette{
+
+
+    &__color{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        &__square{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+        }
+    }
+
+    &__text{
+        width: 70%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        background-color: rgb(221, 231, 231);
+        font-size: 15px;
+    }
+}
